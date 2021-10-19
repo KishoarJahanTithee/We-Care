@@ -22,7 +22,7 @@ const warriors = [
 
 const FrontWarriors = () => {
     return (
-        <div className="container">
+        <div id="doctors" className="container">
             <h2>Our Front <span>WARRIORS</span></h2>
             <div className="row mx-auto d-flex text-center doctor-container">
 {
