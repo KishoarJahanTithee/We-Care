@@ -12,6 +12,7 @@ const Service = ({service}) => {
             <Link to={`/service/${id}`}>
             <button className="btn btn-light">Get {name.toLowerCase()}</button>
             </Link>
+           
         </div>
     );
 };

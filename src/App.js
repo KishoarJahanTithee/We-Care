@@ -8,6 +8,9 @@ import Login from './Pages/Login/Login/Login';
 import Header from './Pages/Shared/Header/Header';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
+import Footer from './Pages/Shared/Footer/Footer';
+import Mission from './Pages/Mission/Mission';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -23,6 +26,12 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          <Route path="/mission">
+           <Mission></Mission>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
           <PrivateRoute path="/service/:serviceId">
             <GetService></GetService>
           </PrivateRoute>
@@ -33,6 +42,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
       </AuthProvider>
 
